@@ -4,7 +4,6 @@ const core = require('@actions/core');
 
 // most @actions toolkit packages have async methods
 async function run() {
-    throw Error();
   try {
       const ff = core.getInput('file');
     const tag = core.getInput('tag');
