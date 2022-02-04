@@ -7,7 +7,7 @@ async function run() {
   try {
       const ff = core.getInput('file');
     const tag = core.getInput('tag');
-    core.info(`Loading file ${file} tag: ${tag}`);
+    core.info(`Loading file ${ff} tag: ${tag}`);
 
     // core.debug((new Date()).toTimeString()); // debug is only output if you set the secret `ACTIONS_RUNNER_DEBUG` to true
       // var funcf = require(ff);
