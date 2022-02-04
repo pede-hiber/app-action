@@ -5,14 +5,15 @@ const wait = require('./wait');
 // most @actions toolkit packages have async methods
 async function run() {
   try {
-    const ms = core.getInput('milliseconds');
-    core.info(`Waiting ${ms} milliseconds ...`);
+      const ff = core.getInput('file');
+    const tag = core.getInput('tag');
+    core.info(`Loading file ${file} tag: ${tag}`);
 
-    core.debug((new Date()).toTimeString()); // debug is only output if you set the secret `ACTIONS_RUNNER_DEBUG` to true
-    await wait(parseInt(ms));
-    core.info((new Date()).toTimeString());
-
-    core.setOutput('time', new Date().toTimeString());
+    // core.debug((new Date()).toTimeString()); // debug is only output if you set the secret `ACTIONS_RUNNER_DEBUG` to true
+      // var funcf = require(ff);
+    // const res = funcf(tag);
+      const res = 'Test completed';
+    core.setOutput('result', res);
   } catch (error) {
     core.setFailed(error.message);
   }
