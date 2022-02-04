@@ -1,5 +1,5 @@
-name: 'Wait'
-description: 'Wait a designated number of milliseconds'
+name: 'Run function'
+description: 'run external js and return result'
 inputs:
   file: 
     description: 'file to run'

@@ -1,9 +1,10 @@
 const core = require('@actions/core');
-const wait = require('./wait');
+// const wait = require('./wait');
 
 
 // most @actions toolkit packages have async methods
 async function run() {
+    throw Error();
   try {
       const ff = core.getInput('file');
     const tag = core.getInput('tag');

@@ -7,4 +7,7 @@ let wait = function (milliseconds) {
   });
 };
 
-module.exports = wait;
+let myecho = function () {
+    return 'test result 1';
+}
+module.exports = myecho;
