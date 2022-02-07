@@ -10,9 +10,8 @@ async function run() {
     core.info(`Loading file ${ff} tag: ${tag}`);
 
     // core.debug((new Date()).toTimeString()); // debug is only output if you set the secret `ACTIONS_RUNNER_DEBUG` to true
-      // var funcf = require(ff);
-    // const res = funcf(tag);
-      const res = 'Test completed';
+      var funcf = require(ff);
+      const res = funcf(tag);
     core.setOutput('result', res);
   } catch (error) {
     core.setFailed(error.message);
